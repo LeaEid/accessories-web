@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  font-family: cursive;
+  .top-home-banner {
+    height: 6em;
+    background-color: #A95C68;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 2em;
+    .logo {
+      width: 5em;
+      height: 5em;
+    }
+  }
+  
+  .top-menu-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F3CFC6;
+    color: white;
+    height: 2.5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: black;
+    .top-menu-item {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      padding: 0em 1em;
+    }
+    .top-menu-item:hover {
+      cursor:pointer;
+      background-color: #A95C68;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  font-family: cursive;
+  padding:1em;
+  background-color: #A95C68;
+  .footer-first-section {
+    display: flex;
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      // align-content: stretch;
+      justify-content: space-around;
+      margin-right: 3em;
+      .footer-contact {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      .footer-contact-det{
+        font-size: 1.1em;
+        padding: 0.2em;
+      }
+    }
+
+    .menu-footer {
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid;
+      padding-left: 3em;
+      .footer-menu-item {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0.4em;
+      }
+      .footer-menu-item:hover {
+        cursor:pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    .btn-social {
+      width: 3.3em;
+      height: 3.3em;
+    }
+  }
+}

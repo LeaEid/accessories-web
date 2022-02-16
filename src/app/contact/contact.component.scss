@@ -1,0 +1,38 @@
+:host {
+  flex-grow: 1;
+  font-family: cursive;
+    .page-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 1.5em;
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3em;
+      .contact-section {
+        margin-left: 3em;
+        .contact-detail {
+          margin-bottom: 1em; 
+        }
+      }
+
+      .map-section  {
+        .mapouter {
+          height: 500px;
+          width: 600px;
+          margin: 0px !important;
+          position:relative;
+          text-align:right;
+          .gmap_canvas {
+            height: 500px;
+            width: 600px;
+            margin: auto;
+            overflow:hidden;
+            background:none!important;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,31 @@
+
+<header>
+  <img class="main-banner" src="./assets/banner.jpg" />
+</header>
+<body>
+  <div class="featured-categories">
+    <div class="featured-title">Top Categories</div>
+    <div class="list-categories">
+      <div class="item-cat" *ngFor="let cat of categories; let i = index"  (click)="openItemsByCategory(cat.id)">
+        <img class="item-img" src="{{cat.imgPath}}" />
+        <div class="cat-name">{{cat.name}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-us">
+    "We make nice accessories but you make them look beautiful on you..."
+  </div>
+
+  <div class="featured-items odd">
+    <div class="featured-title">Top Necklaces</div>
+    <div class="list-items">
+      <img class="item-cat" src="./assets/pics/neck1.jpg" />
+      <img class="item-cat" src="./assets/pics/neck2.jpg" />
+      <img class="item-cat" src="./assets/pics/neck3.jpg" />
+      <img class="item-cat" src="./assets/pics/neck4.jpg" />
+      <img class="item-cat" src="./assets/pics/neck5.jpg" />
+      <img class="item-cat" src="./assets/pics/neck6.jpg" />
+    </div>
+  </div>
+</body>
